@@ -1,0 +1,25 @@
+@import "../../sass/main.scss";
+.button {
+	padding: 15px 29px;
+	background-color: $darkpurple;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: 600;
+	align-items: center;
+	line-height: 24px;
+	display: inline-block;
+	border: 1px solid $darkpurple;
+
+	&--sm {
+		font-size: 14px;
+		padding: 14px 19px;
+		line-height: 17px;
+	}
+
+	&--outline {
+		color: $darkpurple;
+		background-color: transparent;
+	}
+}

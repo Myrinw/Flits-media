@@ -1,0 +1,42 @@
+@font-face {
+	font-family: "Mont";
+	src: url("/fonts/Mont-Regular.otf") format("opentype");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Mont";
+	font-weight: bold;
+	src: url("/fonts/Mont-Bold.otf") format("opentype");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Mont";
+	font-weight: 600;
+	src: url("/fonts/Mont-SemiBold.otf") format("opentype");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Mont";
+	font-weight: 900;
+	src: url("/fonts/Mont-Heavy.otf") format("opentype");
+	font-display: swap;
+}
+
+html,
+body {
+	font-family: "Mont", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Mont";
+	font-weight: bold;
+}
+
+.white {
+	color: #fff;
+}
