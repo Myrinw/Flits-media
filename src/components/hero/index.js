@@ -10,9 +10,10 @@ const Hero = (props) => {
 				{props.nav}
 				{props.children}
 			</div>
-			<img className="hero__curve" src={curve} width="2000" />
+			<img className="hero__curve" src={curve} width="2000" alt="" />
 			<StaticImage
 				src="../../images/website.png"
+				placeholder="blurred"
 				loading="eager"
 				alt="snelle websites"
 				className="hero__laptop"

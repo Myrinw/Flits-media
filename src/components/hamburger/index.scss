@@ -1,0 +1,81 @@
+@import "../../sass/main.scss";
+
+.navigation__hamburger {
+	display: none;
+	@media screen and (max-width: 1110px) {
+		display: block;
+	}
+	width: 50px;
+	height: 25px;
+	position: relative;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+	border: 0;
+	background-color: inherit;
+	position: absolute;
+	right: 20px;
+	top: 37px;
+	z-index: 3;
+	cursor: pointer;
+	span {
+		display: block;
+		position: absolute;
+		height: 4px;
+		width: 100%;
+		background: $darkpurple;
+		border-radius: 9px;
+		opacity: 1;
+		left: 0;
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transition: 0.25s ease-in-out;
+		-moz-transition: 0.25s ease-in-out;
+		-o-transition: 0.25s ease-in-out;
+		transition: 0.25s ease-in-out;
+	}
+	span:nth-child(1) {
+		top: 0px;
+	}
+	span:nth-child(2),
+	span:nth-child(3) {
+		top: 15px;
+	}
+	span:nth-child(4) {
+		top: 30px;
+	}
+}
+.navigation__hamburger.open {
+	span:nth-child(1) {
+		top: 18px;
+		width: 0%;
+		left: 50%;
+	}
+
+	span:nth-child(2) {
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	span:nth-child(3) {
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+
+	span:nth-child(4) {
+		top: 18px;
+		width: 0%;
+		left: 50%;
+	}
+}

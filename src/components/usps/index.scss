@@ -1,0 +1,66 @@
+@import "../../sass/main.scss";
+
+.usps {
+	margin-top: 4px;
+	margin-bottom: 137px;
+	&__usp {
+		padding: 29.5px 20px;
+		background-color: #fff;
+		border-radius: 8px;
+		box-shadow: 16.1137px 24.1706px 64.455px rgba(164, 1, 250, 0.04);
+		display: flex;
+		align-items: center;
+		font-family: "Montserrat";
+
+		&--pink {
+			.usps__icon {
+				background-color: rgba($purple, 0.2);
+
+				svg {
+					path {
+						fill: $purple;
+					}
+				}
+			}
+		}
+		&--grey {
+			.usps__icon {
+				background-color: rgba($grey, 0.2);
+
+				svg {
+					path {
+						fill: $greypurple;
+					}
+				}
+			}
+		}
+	}
+
+	&__icon {
+		width: 60px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		background-color: rgba($darkpurple, 0.2);
+		margin-right: 18.5px;
+
+		svg {
+			width: 26.6px;
+			height: 26.6px;
+			path {
+				fill: #8255fd;
+			}
+		}
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 1.875rem;
+		margin-bottom: 10px;
+	}
+	&__text {
+		color: #333333;
+		font-size: 0.9063rem;
+	}
+}

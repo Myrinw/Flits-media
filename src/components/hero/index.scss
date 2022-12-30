@@ -1,7 +1,7 @@
 @import "../../sass/main.scss";
 .hero {
 	color: #fff;
-
+	position: relative;
 	.pagetitleh1 {
 		font-size: 0;
 		width: 1px;
@@ -27,15 +27,16 @@
 		width: 100%;
 	}
 	&__title {
-		max-width: 780px;
+		max-width: 580px;
 		margin-left: auto;
 		margin-right: auto;
-		font-size: 55px;
+		font-size: 3.4rem;
 		font-weight: 600;
 		color: #333333;
 		text-align: center;
 		line-height: 135%;
 		display: block;
+		height: 148.5px;
 		span {
 			font-weight: 900;
 			color: #fff;
@@ -55,6 +56,6 @@
 		max-width: 1600px;
 		margin-left: auto;
 		margin-right: auto;
-		display: block;
+		display: block !important;
 	}
 }
